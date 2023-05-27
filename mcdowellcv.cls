@@ -1,8 +1,5 @@
 \ProvidesClass{mcdowellcv}[2022/03/18 v1.2.0 McDowell CV class]
 
-% Set up the fonts according to options
-\def\mainfontsize{10pt}
-
 % Set up papersize according to options, default to US letter
 \def\papersize{letterpaper}
 
@@ -21,14 +18,20 @@
 \ProcessOptions\relax
 
 % Set font size and paper type
-\LoadClass[\papersize,\mainfontsize]{article}
+\LoadClass[\papersize,10pt]{article}
 
 % Set document margins
-\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry}
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry}
 
 % Set font face
 \usepackage{fontspec}
-\setmainfont[SmallCapsFeatures={Renderer=Basic}, Ligatures={TeX}]{Baskerville}
+\setmainfont{LatinModernRoman}[
+  SmallCapsFont=LatinModernRomanCaps,
+  SmallCapsFeatures={},
+  ItalicFeatures={SmallCapsFont=LMRomanCaps10-Oblique},
+  BoldFeatures={SmallCapsFont=LMRomanCaps10-Regular},
+  Ligatures={TeX}
+]
 
 % Remove paragraph indentation
 \usepackage[parfill]{parskip}
