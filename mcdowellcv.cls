@@ -95,47 +95,25 @@
 %                                   Constants                                   -
 %--------------------------------------------------------------------------------
 
-\ifthenelse{\equal{\platformname}{\notwindowsname}}{
-  \def\namespaceskip{0.575em}
-  \def\afterheaderspace{1.1pt}
-  \def\beforesectionheaderspace{5pt}
-  \def\sectionheadermargin{6pt}
-  \def\beforesectionheaderhrulespace{2.85pt}
-  \def\sectionheaderhrlueheight{0.518pt}
-  \def\aftersectionheaderspace{-5.8pt}
+\def\namespaceskip{0.575em}
+\def\afterheaderspace{1.1pt}
+\def\beforesectionheaderspace{5pt}
+\def\sectionheadermargin{6pt}
+\def\beforesectionheaderhrulespace{2.85pt}
+\def\sectionheaderhruleheight{0.518pt}
+\def\aftersectionheaderspace{-2pt}
 
-  \ifpapersize
-    \def\aftersinglelinesubsectionheaderspace{-5.75pt}
-  \else
-    \def\aftersinglelinesubsectionheaderspace{-20.25pt}
-  \fi
+\ifpapersize
+  \def\aftersinglelinesubsectionheaderspace{-5.75pt}
+\else
+  \def\aftersinglelinesubsectionheaderspace{-7pt}
+\fi
 
-  \def\afterdoublelinesubsectionheaderspace{-11.75pt}
-  \def\aftermultilinesubsectionheaderspace{-7.75pt}
-  \def\afteremptysubsectionheaderspace{1.25pt}
-  \def\subsectionmargin{9pt}
-  \def\aftersubsectionspace{2.1pt}
-}{
-  \def\namespaceskip{0.4em}
-  \def\afterheaderspace{3pt}
-  \def\beforesectionheaderspace{4.75pt}
-  \def\sectionheadermargin{6pt}
-  \def\beforesectionheaderhrulespace{3pt}
-  \def\sectionheaderhrlueheight{0.5pt}
-  \def\aftersectionheaderspace{-4pt}
-
-  \ifpapersize
-    \def\aftersinglelinesubsectionheaderspace{-4pt}
-  \else
-    \def\aftersinglelinesubsectionheaderspace{-18.5pt}
-  \fi
-
-  \def\afterdoublelinesubsectionheaderspace{-10pt}
-  \def\aftermultilinesubsectionheaderspace{-6pt}
-  \def\afteremptysubsectionheaderspace{3pt}
-  \def\subsectionmargin{9pt}
-  \def\aftersubsectionspace{4pt}
-}
+\def\afterdoublelinesubsectionheaderspace{-5pt}
+\def\aftermultilinesubsectionheaderspace{-5pt}
+\def\afteremptysubsectionheaderspace{1.25pt}
+\def\subsectionmargin{9pt}
+\def\aftersubsectionspace{2.1pt}
 
 %--------------------------------------------------------------------------------
 %                            Header Setup and Printing                          -
@@ -202,7 +180,7 @@
     \textsc{\textbf{#1}}
   \end{adjustwidth}
   \vspace*{\beforesectionheaderhrulespace}
-  \hrule height \sectionheaderhrlueheight
+  \hrule height \sectionheaderhruleheight
   \vspace*{\aftersectionheaderspace}
 }{}
 \makeatother
