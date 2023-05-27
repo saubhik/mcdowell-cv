@@ -10,7 +10,7 @@
   United States
 }
 \contacts{
-  Mobile: (470) 313-0534 \linebreak \ULurl{saubhik.mukherjee@gmail.com}
+  +1 (470) 313-0534 \linebreak \ULurl{saubhik.mukherjee@gmail.com}
 }
 
 \begin{document}
@@ -152,42 +152,112 @@
 
   \begin{cvsection}{Internships \& Research}
     \begin{cvsubsection}
-      {Graduate Research Assistant}
-      {\href{https://scs.gatech.edu/}{Georgia Tech, Atlanta}}
-      {Aug 2021 - May 2022}
+      {Graduate Research Assistant \linebreak \textit{Networked Systems}}
+      {\href{https://scs.gatech.edu/}{Georgia Institute of Technology \linebreak Atlanta, GA, USA}}
+      {Aug 23, 2021 - May 7, 2022}
         \begin{itemize}
-            \item Ported Facebook's QUIC implementation, \href{https://github.com/facebookincubator/mvfst}{mvfst}, to rely on the efficient kernel-bypass network stack (threading \& socket) APIs provided by MIT's \href{https://www.usenix.org/conference/nsdi19/presentation/ousterhout}{Shenango} and achieve low tail latency \& increase CPU efficiency.
-            \item \href{https://github.com/saubhik/caladan/pulls}{\textit{QuicNIC}}: Offloaded GSO \& crypto (encryption, decryption) to a dedicated CPU core to obtain record QUIC throughputs (x5). \textit{Skills}:
-            \href{https://quicwg.org/}{QUIC},
-            \href{https://github.com/shenango/caladan}{caladan}, \href{https://github.com/facebookincubator/mvfst}{mvfst}, \href{https://github.com/facebook/folly}{folly}, \href{https://github.com/facebookincubator/fizz}{fizz}, profiling prod C++ codebase, \href{https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html}{CPU FlameGraphs}.
+          \item
+            Developed
+            \href{https://github.com/saubhik/caladan/pulls}{\textit{QuicNIC}},
+            a software NIC to accelerate the \href{https://quicwg.org/}{QUIC}
+            stack, to move segmentation, pacing, and encryption from the
+            application to a dedicated core implementing software NIC
+            functionality; achieved TCP-like single-connection throughput.
+          \item
+            Ported Meta's production QUIC (network protocol) implementation,
+            \href{https://github.com/facebookincubator/mvfst}{mvfst} (\&
+            dependencies \href{https://github.com/facebook/folly}{folly},
+            \href{https://github.com/facebookincubator/fizz}{fizz}), to rely on
+            the efficient kernel-bypass network stack (custom threading \&
+            socket libraries) APIs provided by MIT's
+            \href{https://www.usenix.org/conference/nsdi19/presentation/ousterhout}{Shenango}
+            (\href{https://github.com/shenango/caladan}{caladan}) and achieve
+            low tail latency \& increase CPU efficiency; involved CPU profiling
+            using
+            \href{https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html}{flame
+            graphs}.
+          \item
+            This
+            \href{https://drive.google.com/file/d/1-y7gsG67KGIeD2qhomVT0vTPlPB4Vep1/view?usp=sharing}{research}
+            was supervised by professors
+            \href{https://saeed.github.io/index.html}{Ahmed Saeed} and
+            \href{https://www.cc.gatech.edu/fac/Mostafa.Ammar/}{Mostafa Ammar}.
         \end{itemize}
     \end{cvsubsection}
 
-    \begin{cvsubsection}{Linux Contributor, Intern}{\href{https://summerofcode.withgoogle.com/archive/2021/projects/4818588170452992}{Google Summer of Code}}{May '21 - Aug '21}
+    \begin{cvsubsection}
+      {Open Source Contributor \linebreak \textit{The Linux Foundation}}
+      {\href{https://summerofcode.withgoogle.com/archive/2021/projects/4818588170452992}{Google Summer of Code}}
+      {Jun 7, 2021 - Aug 23, 2021}
         \begin{itemize}
-            \item Analyze and fix race condition bugs in the Linux kernel 5.4 device drivers based on software verification static analysis tool, \href{https://forge.ispras.ru/projects/klever}{Klever}. Part of \textit{Linux Standards Base} \& \textit{Linux Driver Verification}.
-            \item Accepted \href{https://lore.kernel.org/lkml/?q=saubhik}{patches} to kernel mainline. \textit{Skills}: \href{https://www.kernel.org/}{Linux kernel development}, C.
+          \item
+            Analyze and fix race condition bugs in the Linux Kernel 5.4 device
+            drivers based on software verification static analysis tool,
+            \href{https://forge.ispras.ru/projects/klever}{Klever}. Accepted
+            \href{https://lore.kernel.org/lkml/?q=saubhik}{patches} to kernel
+            mainline. \textit{Skills}: \href{https://www.kernel.org/}{Linux
+            kernel development}, C.
         \end{itemize}
     \end{cvsubsection}
   \end{cvsection}
 
   \begin{cvsection}{Education}
-    \begin{cvsubsection}{Atlanta, GA}{\href{https://www.gatech.edu/}{Georgia Institute of Technology}}{Jan '20 - May '22}
+    \begin{cvsubsection}
+      {Master of Science in Computer Science, \textit{Systems Specialization}}
+      {\href{https://www.gatech.edu/}{Georgia Institute of Technology \linebreak Atlanta, GA, USA}}
+      {Jan 6, 2020 - May 7, 2022}
       \begin{itemize}
-        \item \textbf{Master of Science in Computer Science} with \textit{Systems Specialization}, May 2022. \textbf{GPA: 4.0}
-        \item \textit{Courses}: Operating Systems; Computer Architecture; Compilers; Networks; Distributed Systems; Databases; HPC; Algorithms.
+        \item
+          \textit{Major}: Computer Science, \textit{Concentration}: Computing
+          Systems. \textit{Overall GPA}: 4.00.
+          \href{https://drive.google.com/file/d/1rG1vO2I3fK_aVtkboU8p6I_6vYUQBlf9/view?usp=sharing}{Transcript
+          link}.
+        \item
+          \textit{Courses}: High Performance Computer Architecture, Computer
+          Networks, Compilers \& Interpreters, Advanced Operating Systems, High
+          Performance Computing, Database Systems Concepts \& Design,
+          Distributed Computing, Introduction to Graduate Algorithms,
+          Datacenter Networks \& Systems.
       \end{itemize}
     \end{cvsubsection}
-    \begin{cvsubsection}{Kolkata, IN}{\href{https://www.isical.ac.in/}{Indian Statistical Institute}}{Jul '15 - Jun '17}
+    \begin{cvsubsection}
+      {Master of Science in Quantitative Economics}
+      {\href{https://www.isical.ac.in/}{Indian Statistical Institute \linebreak Kolkata, India}}
+      {Jul 2015 - Jun 2017}
       \begin{itemize}
-        \item \textbf{Master of Science in Quantitative Economics}; full scholarship \& monthly stipends
-        \item \textit{Relevant Courses}: Optimization; Game Theory.
+        \item
+          Passed in First Division with Distinction.
+          \href{https://drive.google.com/file/d/1b0q9SZj-vi8_KwSI1X1aQ1qtAroeXgw0/view?usp=sharing}{Transcript
+          link}.
+        \item
+          \textit{Courses}: Microeconomics I, Game Theory I, Statistics,
+          Computer Programming and Applications, Basic Economics, Microeconomic
+          Theory II, Macroeconomic Theory I, Econometric Methods I, Time Series
+          Analysis and Forecasting, Game Theory II, Macroeconomics II,
+          Econometric Applications I, Individual and Collective Choice,
+          Political Economy, Econometric Applications II, Economic Development,
+          Bayesian Econometrics, Auction Theory, Optimization Techniques.
       \end{itemize}
     \end{cvsubsection}
-    \begin{cvsubsection}{Chennai, IN}{\href{https://www.cmi.ac.in/}{Chennai Mathematical Institute}}{Aug '12 - Apr '15}
+    \begin{cvsubsection}
+      {Bachelor of Science (Honours) in Mathematics \& Computer Science}
+      {\href{https://www.cmi.ac.in/}{Chennai Mathematical Institute \linebreak Chennai, India}}
+      {Aug 3, 2012 - Jul 25, 2015}
       \begin{itemize}
-        \item \textbf{Bachelor of Science in Mathematics and Computer Science}, \href{https://www.online-inspire.gov.in/}{Innovation in Science Pursuit Scholar}
-        \item \textit{Courses}: Algorithms; Programming Languages; Discrete Math; Theory of Computation; Logic.
+        \item
+          \textit{Cumulative GPA}: 06.93 (out of 10).
+          \href{https://drive.google.com/file/d/1azLzpG9HNLKuCWK21QHGjXc02za2fGW3/view?usp=sharing}{Transcript
+          link}.
+        \item
+          \textit{Courses}: Algebra I, Calculus I, Classical Mechanics I,
+          English, Introduction to Programming, Advanced Programming, Algebra
+          II, Calculus II, Discrete Mathematics, Probability Theory,
+          Environment Course, Algebra III, Calculus III, Design \& Analysis of
+          Algorithms, Real Analysis, Theory of Computation, Complex Analysis,
+          Differential Equations, Programming Language Concepts, Topology,
+          Differential Geometry, Algebra IV, Introduction to Logic, Commutative
+          Algebra, Optimization Techniques, Economics, Electrodynamics I,
+          Finance, Representation Theory.
       \end{itemize}
     \end{cvsubsection}
   \end{cvsection}
