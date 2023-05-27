@@ -1,0 +1,129 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{\href{https://www.linkedin.com/in/ankita-mukherjee-441768120/}{Ankita Mukherjee}}
+\address{1735 Woodland Ave, Apt 62 \linebreak East Palo Alto, CA 94303}
+\contacts{(470) 830-4572 \linebreak \ULurl{amukherjee1@sfsu.edu}}
+
+\begin{document}
+
+	% Print the header
+    \makeheader
+    
+	\begin{cvsection}{Employment}
+ \begin{cvsubsection}{Graduate Research Assistant}{\href{https://www.sfsu.edu/}{San Francisco State University, CA}}{Aug '22 - Present}
+        Computer-Vision based system for post-stroke range of motion evaluation
+			\begin{itemize}
+                \item The images/videos are fed into a deep neural network \href{https://tfhub.dev/google/movenet/singlepose/thunder/4}{TensorFlow movenet thunder} and subsequently a joint angle estimation algorithm to automatically calculate the angles in real-time on low-power mobile devices
+                \item Mobile app developed in both Android Studio (Android) and Swift (iOS) and received input from RGB camera of the device
+                \item \textit{Skills}: \href{https://www.python.org/}{Python}, \href{https://pandas.pydata.org/}{Pandas}, \href{https://numpy.org/}{NumPy}, \href{https://scikit-learn.org/}{scikit-learn}, \href{https://www.tensorflow.org/}{TensorFlow}, \href{https://opencv.org/} {OpenCV}, \href{https://scipy.org/}{SciPy}, \href{https://matplotlib.org/}{Matplotlib}, \href {https://www.docker.com/}{Docker}, \href{https://www.linux.org/}{Linux}
+			\end{itemize}
+		\end{cvsubsection}
+        \end{cvsection}
+        \begin{cvsubsection}{Senior Software Engineer}
+        {\href{https://www.tcs.com/}{Tata Consultancy Services}}{May '18 - Jan '21}
+        
+        \begin{itemize}
+    
+                \item Strong understanding of Cloud & Web Services technologies including
+            AWS, REST/SOAP and XML, expertise in Test Planning, Test Cases
+            Design, Test Environment Setup, Test Data Setup, Work Load modelling, Defect Management, Configuration Management, execution of automated test scripts using Mercury Tools (Quality Center, LoadRunner), JMeter based on business /functional specifications.
+
+            \item Heavily involved in various aspects of Mobile
+             Application Testing such as Performance & Load Testing, API Testing, UI/ UX
+             Design Testing, User Acceptance Testing, on both iOS and Android, as well as Web.
+
+            
+            \item Architecting the load testing infrastructure using JMeter, Eggplant, Selenium, Selenium web driver
+
+            \item Proficient with Performance Testtools,SAP,Azure DevOps, JIRA, ALM, Performance Center.
+
+            \item Developed skills for Alexa submitted to India Alexa Skill Store that runs with high quality on hundreds of millions of Echo family devices, and Alexa-enabled devices. \item Heavily used AWS technologies such as AWS Lambda serverless platform with Node.js, and databases such as Amazon RDS, DynamoDB, monitored using CloudWatch, identity management with AWS IAM, and published APIs using Amazon API Gateway. 
+        
+            \hspace{2cm}\item \textit{Skills}: \href{https://www.microfocus.com/en-us/products/loadrunner-professional/overview}{Micro Focus LoadRunner},
+            \href{https://jmeter.apache.org/}{Apache JMeter}, \href{https://www.microfocus.com/en-us/products/alm-quality-center/overview}{ALM},
+            \href{https://grafana.com/}{Grafana}, \href{https://www.influxdata.com/}{InfluxDB}, \href{https://azure.microsoft.com/en-us/products/devops/}{Azure DevOps}, \href{https://help.sap.com/docs/}{SAP Logon}, \href{postgresql.org}{PostgreSQL},
+            \href{https://www.mysql.com/}{MySQL},
+            \href{https://www.oracle.com/database/}{Oracle},
+            \href{https://aws.amazon.com/}{AWS},
+            \href{https://www.eggplantsoftware.com/}{Eggplant},
+            \href{https://www.selenium.dev/}{Selenium},
+            \href{https://www.postman.com/}{Postman},
+            \href{https://www.citrix.com/}{citrix}
+            \end{itemize}
+        \end{cvsubsection}{}{}{}
+        
+        \begin{cvsection}{Projects}
+        \begin{cvsubsection}{}{}{}
+           \textbf{Verification of Dual Port Ram (DPRAM) using System Verilog}
+             \begin{itemize}
+           \item A verification environment for testing the functionality of a DPRAM module.
+            \end{itemize} 
+        \end{cvsubsection}{}{}{}
+        \begin{cvsubsection}{}{}{}
+            \textbf{ASIC Implementation of Motion Estimator in 14nm }
+            \begin{itemize}
+            \item Designed a motion estimator with 16 × 16 reference block and 32 × 32 search block
+            \item Verified RTL (Register Transfer Level) starting from front end synthesis, timing check followed by back-end physical design 
+            \end{itemize}  
+        \end{cvsubsection}{}{}{}
+        \begin{cvsubsection}{}{}{}
+            \textbf{Full-Custom Layout Design of $16 \times 8$ SRAM (Grad Project)}
+            \begin{itemize}
+                \item Focussed on minimizing chip area, access time, active power, or the product of all
+                 Power Estimation 
+                 \end{itemize}
+        \end{cvsubsection}{}{}{}
+          \begin{cvsubsection}{}{}{}
+            \textbf{Gesture-Controlled Robot Car (Undergrad Project)}
+            \begin{itemize}
+                \item Hand gesture-controlled car using a
+                LilyPad Arduino microcontroller, accelerometer, and RF-transmitter-
+                receiver pair. A transmitting device containing the RF transmitter and accelerator placed on a user’s hand to move the robot car in any direction.
+                \item \textit{Skills}: \href{https://en.wikipedia.org/wiki/Arduino_Uno}{Arduino Uno}, ADXL335, accelerometer, 433 MHz RF transmitter, 433 MHz RF receiver, L293D motor driver IC, Chassis and wheels, DC motors
+                \end{itemize}
+        \end{cvsubsection}{}{}{}    
+         \end{cvsection}
+	% Print the content
+	\begin{cvsection}{Education}
+        \begin{cvsubsection}{San Francisco, CA}{\href{https://www.sfsu.edu/}{San Francisco State University, CA}}{Aug '22 - Dec '23}
+			\begin{itemize}
+                \item \textbf{Master of Science in Electrical and Computer Engineering}. \textit{GPA: 4.0}
+                \item \textit{Courses}: Advanced Digital Design, Digital VLSI Design, Digital Design Verification, Neural-Machine Interfaces, Embedded Systems, Hardware for Machine Learning, Advanced Microprocessor Architectures, Computer Systems
+			\end{itemize}
+		\end{cvsubsection}
+        \begin{cvsubsection}{Kolkata, IN}{\href{http://makautexam.net/}{West Bengal University of Technology}}{Aug '14 - May '18}
+            \begin{itemize}
+                \item \textbf{Bachelor of Technology in Electrical Engineering}. \textit{GPA: 4.0}
+                \item \textit{Courses}: Analog \& Digital Electronic Circuit, Microprocessors \& Microcontrollers, Database Management System, Digital Signal Processing, Power Electronics, Electrical System Design, Computer Networks, Control System, Power System, Electric Machines, Circuit Theory
+            \end{itemize}
+        \end{cvsubsection}
+	\end{cvsection}
+	  
+\end{document}

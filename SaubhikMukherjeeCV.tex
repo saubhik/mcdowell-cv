@@ -1,0 +1,107 @@
+%! TeX program = lualatex
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{\href{https://www.linkedin.com/in/saubhikm/}{Saubhik Mukherjee}}
+\address{1735 Woodland Ave, Apt 62 \linebreak East Palo Alto, CA 94303}
+\contacts{(470) 313-0534 \linebreak \ULurl{saubhik@gatech.edu}}
+
+\begin{document}
+
+    % Print the header
+    \makeheader
+
+    % Print the content
+    \begin{cvsection}{Employment}
+        \begin{cvsubsection}{Senior Software
+          Engineer}{\href{https://sambanova.ai/}{SambaNova Systems, Palo
+          Alto}}{(1 year) May '22 - Present}
+            \textit{ML Compiler (Template Library)}
+            \begin{itemize}
+                \item Developing an embedded DSL \& compiler in C++ using
+                  \href{https://mlir.llvm.org/}{MLIR} for programming compute
+                  \& memory units to implement ML kernels on a CGRA chip.
+                \item Compiler support \& abstraction for h/w features \& bug workarounds across different h/w generations; resource optimizations, legalization \& MLIR graph transformations in compiler passes.
+                \item \textit{Tools}: C++ (\href{https://clang.llvm.org/}{LLVM clang 11}), \href{https://mlir.llvm.org/}{LLVM's MLIR}, \href{https://cmake.org/}{cmake}, \href{https://ninja-build.org/}{ninja};
+                    remote development with \href{https://github.com/tmux/tmux}{tmux}, \href{https://www.vim.org/}{vim}, \href{https://github.com/universal-ctags/ctags}{ctags} \& \href{https://clangd.llvm.org/}{clangd} LSP.
+            \end{itemize}
+        \end{cvsubsection}
+
+        \begin{cvsubsection}{Graduate Research Assistant}{\href{https://scs.gatech.edu/}{Georgia Tech, Atlanta}}{Aug '21 - May '22}
+            \begin{itemize}
+                \item Ported Facebook's QUIC implementation, \href{https://github.com/facebookincubator/mvfst}{mvfst}, to rely on the efficient kernel-bypass network stack (threading \& socket) APIs provided by MIT's \href{https://www.usenix.org/conference/nsdi19/presentation/ousterhout}{Shenango} and achieve low tail latency \& increase CPU efficiency.
+                \item \href{https://github.com/saubhik/caladan/pulls}{\textit{QuicNIC}}: Offloaded GSO \& crypto (encryption, decryption) to a dedicated CPU core to obtain record QUIC throughputs (x5). \textit{Skills}:
+                \href{https://quicwg.org/}{QUIC},
+                \href{https://github.com/shenango/caladan}{caladan}, \href{https://github.com/facebookincubator/mvfst}{mvfst}, \href{https://github.com/facebook/folly}{folly}, \href{https://github.com/facebookincubator/fizz}{fizz}, profiling prod C++ codebase, \href{https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html}{CPU FlameGraphs}.
+            \end{itemize}
+        \end{cvsubsection}
+
+        \begin{cvsubsection}{Linux Contributor, Intern}{\href{https://summerofcode.withgoogle.com/archive/2021/projects/4818588170452992}{Google Summer of Code}}{May '21 - Aug '21}
+            \begin{itemize}
+                \item Analyze and fix race condition bugs in the Linux kernel 5.4 device drivers based on software verification static analysis tool, \href{https://forge.ispras.ru/projects/klever}{Klever}. Part of \textit{Linux Standards Base} \& \textit{Linux Driver Verification}.
+                \item Accepted \href{https://lore.kernel.org/lkml/?q=saubhik}{patches} to kernel mainline. \textit{Skills}: \href{https://www.kernel.org/}{Linux kernel development}, C.
+            \end{itemize}
+        \end{cvsubsection}
+
+        \begin{cvsubsection}{Lead Software Engineer}{\href{https://www.alpaca.ai}{Alpaca, Tokyo, Japan}}{(2 years) Jan '19 - Jan '21}
+            \begin{itemize}
+                \item Agile team lead of 3 engineers \& Release Manager developing prod systems for delivering JP \& US stock predictions to hedge funds, asset management firms through back-end batch systems \& web-apps.
+                \item Lead dev \& design of full-stack web-service (\href{https://developer.mozilla.org/en-US/docs/Web/JavaScript}{JS}, \href{https://www.python.org/}{Python}, \href{https://flask.palletsprojects.com/}{Flask}, \href{https://www.postgresql.org/}{PostgreSQL}) deployed to prod from scratch withing 3 months; led 10\% annual revenue growth; involved in code reviews, schema design \& prod deploys.
+                \item Dev \& design of prod ML pipeline \& ML model dev for stock price predictions using CNN, NN arch search (\href{https://pytorch.org/}{PyTorch}, \href{https://pandas.pydata.org/}{Pandas}, \href{https://numpy.org/}{NumPy})
+            \end{itemize}
+        \end{cvsubsection}
+
+        \begin{cvsubsection}{Data Scientist}{\href{https://www.ab-inbev.com/}{Anheuser-Busch InBev, Bangalore}}{(1.5 years) Jun '17 - Dec '18}
+            \begin{itemize}
+                \item Developed pricing conjoint modelling pipelines for revenue mgmt across business units with UI dashboards.
+                \item Awarded \textit{Innovation Impact Award} among 200 new hires for developing brand/SKU optimization techniques, aggregating regional conjoint studies; lead 4 data scientists. \textit{Tools}: \href{https://www.r-project.org/about.html}{R}, \href{https://shiny.rstudio.com/}{RShiny}, \href{https://www.python.org/}{Python}, \href{https://jupyter.org/}{Jupyter}.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \begin{cvsection}{Education}
+        \begin{cvsubsection}{Atlanta, GA}{\href{https://www.gatech.edu/}{Georgia Institute of Technology}}{Jan '20 - May '22}
+            \begin{itemize}
+                \item \textbf{Master of Science in Computer Science} with \textit{Systems Specialization}, May 2022. \textbf{GPA: 4.0}
+                \item \textit{Courses}: Operating Systems; Computer Architecture; Compilers; Networks; Distributed Systems; Databases; HPC; Algorithms.
+            \end{itemize}
+        \end{cvsubsection}
+        \begin{cvsubsection}{Kolkata, IN}{\href{https://www.isical.ac.in/}{Indian Statistical Institute}}{Jul '15 - Jun '17}
+            \begin{itemize}
+                \item \textbf{Master of Science in Quantitative Economics}; full scholarship \& monthly stipends
+                \item \textit{Relevant Courses}: Optimization; Game Theory; ACM-ICPC regional qualifier.
+            \end{itemize}
+        \end{cvsubsection}
+        \begin{cvsubsection}{Chennai, IN}{\href{https://www.cmi.ac.in/}{Chennai Mathematical Institute}}{Aug '12 - Apr '15}
+            \begin{itemize}
+                \item \textbf{Bachelor of Science in Mathematics and Computer Science}, \href{https://www.online-inspire.gov.in/}{Innovation in Science Pursuit Scholar}
+                \item \textit{Courses}: Algorithms; Programming Languages; Discrete Math; Theory of Computation; Logic.
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+    \begin{cvsection}{Projects}
+        \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \item \href{https://github.com/saubhik/thread-scheduler}{\textit{Xen's Credit Scheduler}} Credit scheduler C implementation in a user-level threads library.
+                \item \href{https://github.com/saubhik/tinyfile}{\textit{TinyFile}} Shared memory-based file compression service with client library in C.
+                \item \href{https://github.com/saubhik/GTStore}{\textit{Distributed KVS}} Distributed key-value store using XML-RPC with partitioning, replication \& consistency.
+            \end{itemize}
+        \end{cvsubsection}{}{}{}
+    \end{cvsection}
+
+    \begin{cvsection}{Languages and Technologies}
+        \begin{cvsubsection}{}{}{}
+            \begin{itemize}
+                \item \textbf{About 10k lines}: C++, Python, C, Java; \textbf{About 500 lines}: JS, HTML, CSS
+                \item Linux, git, tmux, vim, ctags, LSPs (clangd), docker, k8s, AWS, Auth0, CircleCI, DataDog, ArgoCD
+            \end{itemize}
+        \end{cvsubsection}
+    \end{cvsection}
+
+\end{document}
