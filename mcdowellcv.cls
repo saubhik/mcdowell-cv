@@ -221,7 +221,7 @@
     \begin{tabu} to 1\textwidth { X[l] X[c] X[r] }
       \textbf{#2} & \textbf{#3} & \textbf{#4} \\
     \end{tabu}
-    % Add space according to the specidied number of lines
+    % Add space according to the specified number of lines
     \ifnumcomp{#1}{=}{1}{\vspace*{\aftersinglelinesubsectionheaderspace}}{
       \ifnumcomp{#1}{=}{2}{\vspace*{\afterdoublelinesubsectionheaderspace}}{
         \vspace*{\aftermultilinesubsectionheaderspace}
