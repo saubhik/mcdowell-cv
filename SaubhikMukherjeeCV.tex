@@ -4,17 +4,16 @@
 
 \name{
   \href{https://www.linkedin.com/in/saubhikm/}{Saubhik Mukherjee} \linebreak
-  \small {AI Compiler Engineer}
+  \small {Compiler Engineer}
 }
 
 \address{
-  433 Jarvis Street \linebreak
-  Toronto, ON M4Y 2G9 \linebreak 
-  Canada (Permanent Resident)
+  807-1900 Simcoe St N
+  Oshawa, ON L1G 4Y3
+  Canada
 }
 \contacts{
-  USA: +1 (470) 313-0534 \linebreak 
-  CAN: +1 (226) 336-3865 \linebreak
+  CAN: +1 (437) 428-1605 \linebreak
   \ULurl{saubhik@gatech.edu}
 }
 
@@ -23,44 +22,37 @@
 
 \begin{cvsection}{Employment}
   \begin{cvsubsection}
-    {Senior Software Engineer \linebreak \textit{Machine Learning (ML) compiler}}
+    {Senior Software Engineer \linebreak \textit{Low-level kernel compiler}}
     {\href{https://sambanova.ai/}{SambaNova Systems, Inc. \linebreak Palo Alto, CA, USA}}
-    {May 23, 2022 - Present}
+    {May 23, 2022 - Present (3 yrs 2 mths)}
     \begin{itemize}
       \item
-            Built \href{https://mlir.llvm.org/}{MLIR} \&
+            Developed \href{https://mlir.llvm.org/}{MLIR} \&
             \href{https://llvm.org/}{LLVM}-based compiler layers \& tools to
-            transform, optimize, debug, execute state-of-the-art AI models on
-            proprietary (non-Von Neumann, dataflow-based) ML accelerator
-            architectures; standardized compiler infrastructure to support for
-            rapid new model bringup (10 per month) with industry-leading model
-            performance
+            transform, optimize, debug, execute LLM kernels on proprietary
+            dataflow CGRA accelerator; optimized compiler passes for lowering
+            embedded DSL programming for memory \& compute unit abstractions;
+            improved compilation time; robustness \& performance testing of new
+            h/w features;
       \item
-            Engineered and refined an embedded DSL abstracting memory \&
-            compute units, ensuring robustness and adaptability to evolving
-            accelerator architectures and emerging ML models; designed
-            optimizations to improve resource count by 5\%
-      \item
-            Analyzed \& improved compile-time \& run-time performance across
-            multiple AI hardware architectures \& ML frameworks, such as
-            \href{https://www.tensorflow.org/}{TensorFlow} \&
-            \href{https://pytorch.org/}{PyTorch}; achieved a 20\% reduction in
-            compilation time for large AI models, resulting in faster model
-            iteration \& development cycles
-            % TODO: Need more impactful points
+            Developed patented tech for on-chip debugging capabilities to
+            set breakpoints during dataflow execution to print on-chip tensors
+            for accuracy \& performance debugging crucial during new model
+            bringup \& customer issues
       \item
             \textit{Tools}:
             \href{https://isocpp.org/}{C++},
             \href{https://clang.llvm.org/}{Clang},
             \href{https://mlir.llvm.org/}{MLIR},
             \href{https://lldb.llvm.org/}{LLDB},
-            \href{https://cmake.org/}{cmake},
+            \href{https://libisl.sourceforge.io/}{Integer Set Library},
+            \href{https://github.com/Z3Prover/z3}{Z3 Prover},
             \href{https://bazel.build/}{Bazel},
+            \href{https://cmake.org/}{cmake},
             \href{https://ninja-build.org/}{ninja},
             \href{https://gperftools.github.io/gperftools/cpuprofile.html}{gperf},
+            \href{https://perfetto.dev/}{perfetto},
             \href{https://github.com/tmux/tmux}{tmux},
-            \href{https://neovim.io/}{neovim},
-            \href{https://github.com/universal-ctags/ctags}{ctags},
             \href{https://clangd.llvm.org/}{clangd},
             \href{https://www.synopsys.com/verification/simulation/vcs.html}{Synopsys VCS}
     \end{itemize}
@@ -69,7 +61,7 @@
   \begin{cvsubsection}
     {Software Engineer \linebreak \textit{Machine Learning (ML) systems}}
     {\href{https://www.alpaca.markets/jp/about.html}{AlpacaJapan, Co. Ltd. \linebreak Tokyo, Japan}}
-    {Jan 1, 2019 - Jan 8, 2021}
+      {Jan 1, 2019 - Jan 8, 2021 (2 yrs)}
     \begin{itemize}
       \item
             Designed, developed, maintained, \& tested production stock price
@@ -110,7 +102,7 @@
   \begin{cvsubsection}
     {Data Scientist \linebreak \textit{ML in pricing research}}
     {\href{https://www.abinbev-india.com/}{Anheuser-Busch InBev \linebreak Bangalore, India}}
-    {Jun 19, 2017 - Dec 28, 2018}
+    {Jun 19, 2017 - Dec 28, 2018 (1 yr 6 mths)}
     \begin{itemize}
       \item
             Developed ML (multinomial logit, neural nets) models to estimate
@@ -134,6 +126,13 @@
     {Aug 23, 2021 - May 7, 2022}
     \begin{itemize}
       \item
+            \textbf{First author}
+            (\href{https://orcid.org/0009-0002-9353-7810}{ORCID}) of
+            ``Understanding QUIC's Throughput Speedbumps''. Published in
+            \textit{ACM Applied Networking Research Workshop} (ANRW '25).
+            \href{https://doi.org/10.1145/3744200.3744780}{DOI:
+            10.1145/3744200.3744780}
+      \item
             Developed
             \href{https://github.com/saubhik/caladan/pulls}{\textit{QuicNIC}},
             a software NIC to accelerate the \href{https://quicwg.org/}{QUIC}
@@ -148,13 +147,11 @@
             the efficient kernel-bypass network stack (custom threading \&
             socket libraries) APIs provided by MIT's
             \href{https://www.usenix.org/conference/nsdi19/presentation/ousterhout}{Shenango}
-            (\href{https://github.com/shenango/caladan}{caladan}) \& achieve low
-            tail latency \& increase CPU efficiency; involved CPU profiling
+            (\href{https://github.com/shenango/caladan}{caladan}) \& achieve
+            low tail latency \& increase CPU efficiency; involved CPU profiling
             using
             \href{https://www.brendangregg.com/FlameGraphs/cpuflamegraphs.html}{flame
-              graphs};
-            \href{https://drive.google.com/file/d/1-y7gsG67KGIeD2qhomVT0vTPlPB4Vep1/view?usp=sharing}{research
-              doc}
+            graphs}
     \end{itemize}
   \end{cvsubsection}
 
@@ -169,7 +166,7 @@
             \href{https://forge.ispras.ru/projects/klever}{Klever}. Accepted
             \href{https://lore.kernel.org/lkml/?q=saubhik}{patches} to kernel
             mainline. \textit{Skills}: \href{https://www.kernel.org/}{Linux
-              kernel development}, C.
+            kernel development}, C
     \end{itemize}
   \end{cvsubsection}
 \end{cvsection}
@@ -183,8 +180,10 @@
             \item
                   \textbf{\href{https://www.gatech.edu/}{Georgia Institute of Technology, USA}}
             \item
-                  \textit{Major}: Computer Science, \textit{Concentration}: Computing Systems. \textit{GPA}: 4.00;
-                  \href{https://drive.google.com/file/d/1rG1vO2I3fK_aVtkboU8p6I_6vYUQBlf9/view?usp=sharing}{transcript link}.
+                  \textit{Major}: Computer Science, \textit{Concentration}:
+                  Computing Systems. \textit{GPA}: 4.00;
+                  \href{https://drive.google.com/file/d/1rG1vO2I3fK_aVtkboU8p6I_6vYUQBlf9/view?usp=sharing}{transcript
+                  link}
           \end{itemize}
     \item
           \textbf{Master of Science in Quantitative Economics \hfill Jul 2015 - Jun 2017}
@@ -201,8 +200,9 @@
             \item
                   \textbf{\href{https://www.cmi.ac.in/}{Chennai Mathematical Institute, India}}
             \item
-                  \textit{GPA}: 06.93 (out of 10); \href{https://drive.google.com/file/d/1azLzpG9HNLKuCWK21QHGjXc02za2fGW3/view?usp=sharing}{transcript
-                    link}.
+                  \textit{GPA}: 06.93 (out of 10);
+                  \href{https://drive.google.com/file/d/1azLzpG9HNLKuCWK21QHGjXc02za2fGW3/view?usp=sharing}{transcript
+                  link}
           \end{itemize}
   \end{itemize}
 \end{cvsection}
